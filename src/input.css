@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.skill {
+  @apply h-[50px] w-[50px] rounded-[50%] text-gray-300 border-[0.5px] border-gray-400 p-3;
+}
