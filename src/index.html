@@ -6,17 +6,17 @@
     <title>Portfolio</title>
   </head>
 
-  <body class="bg-black">
+  <body class="bg-black  overflow-x-hidden">`
     <!-- Main Container -->
-    <div class="flex justify-center items-center relative top-[150px]">
+    <div class="flex left-[250px] items-center relative top-[150px]">
 
       <!-- Main Picture -->
       <div
-        class='w-[450px] h-[450px] bg-[url("./images/pfp.jpg")] bg-cover bg-center rounded-tl-[50%] rounded-tr-[32%] rounded-bl-[35%] rounded-br-[50%]'
+        class='w-[430px] h-[450px] bg-[url("./images/pfp2.jpg")] bg-[430px,50px] bg-no-repeat bg-center rounded-tl-[50%] rounded-tr-[32%] rounded-bl-[35%] rounded-br-[50%]'
       ></div>
 
       <!-- Text Container -->
-      <div class="w-[505px] h-[450px] ml-[30px]">
+      <div class="w-[750px] h-[450px] ml-[30px]">
 
           <div class="text-gray-300 text-[70px]">Krish Neupane</div>
 
@@ -28,16 +28,16 @@
 
 
           <!-- Icons -->
-          <div class="flex gap-4 mt-5">
+          <div class="flex gap-4 mt-5 ">
 
-            <ion-icon name="logo-html5" class="skill"></ion-icon>
-            <ion-icon name="logo-css3" class="skill"></ion-icon>
-            <img
-              src="./images/tailwind.webp"
-              class="border border-gray-300 rounded-[50%] h-[75px] w-[75px] bg-gray-300 p-3"
-            />
-            <ion-icon name="logo-javascript" class="skill"></ion-icon>
-            <ion-icon name="logo-react" class="skill"></ion-icon>
+            <div id="html"><ion-icon name="logo-html5" class="skill cursor-pointer" id="img1"></ion-icon></div>
+            <span id="css"><ion-icon name="logo-css3" class="skill cursor-pointer"  id="img2"></ion-icon></span>
+            <span id="tailwind"><img
+              src="./images/tailwind2.png"
+              class="border border-gray-300 rounded-[50%] h-[75px] w-[75px] bg-black p-3 cursor-pointer" id="img3"
+            /></span>
+            <span id="js"><ion-icon name="logo-javascript" class="skill cursor-pointer" id="img4"></ion-icon></span>
+            <span id="react"><ion-icon name="logo-react" class="skill cursor-pointer" id="img5"></ion-icon></span>
 
           </div>
 
@@ -46,15 +46,15 @@
           <div class="flex gap-3">
 
             <div
-              class="w-[190px] h-[50px] flex justify-center items-center gap-2 text-gray-300 border border-gray-300 rounded-[20px] mt-5 p-2"
-            >
+              class="w-[190px] h-[50px] flex justify-center items-center gap-2 text-gray-300 border border-gray-300 rounded-[20px] mt-5 p-2 cursor-pointer"
+            id="github">
               <ion-icon name="logo-github" class="h-[30px] w-[30px]"></ion-icon>
               <span class="text-[20px] pb-1">whoiskurisu</span>
             </div>
 
             <div
-              class="w-[165px] h-[50px] flex justify-center items-center gap-2 text-gray-300 border border-gray-300 rounded-[20px] mt-5 p-2"
-            >
+              class="w-[165px] h-[50px] flex justify-center items-center gap-2 text-gray-300 border border-gray-300 rounded-[20px] mt-5 p-2 cursor-pointer"
+            id="insta">
               <ion-icon name="logo-instagram" class="h-[30px] w-[30px]"></ion-icon>
               <span class="text-[20px] pb-1">@krish.py</span>
             </div>
@@ -62,8 +62,8 @@
           </div>
 
           <div
-            class="w-[350px] h-[50px] flex justify-center items-center gap-2 text-gray-300 border border-gray-300 rounded-[20px] mt-5 p-2"
-          >
+            class="w-[350px] h-[50px] flex justify-center items-center gap-2 text-gray-300 border border-gray-300 rounded-[20px] mt-5 p-2 cursor-pointer"
+          id="mail">
               <ion-icon name="mail-outline" class="h-[30px] w-[30px]" ></ion-icon>
               <span class="text-[20px] pb-1">krish.neupane3019@gmail.com</span>
          </div>
@@ -79,5 +79,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
