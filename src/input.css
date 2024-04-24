@@ -5,7 +5,3 @@
 .skill {
   @apply h-[50px] w-[50px] rounded-[50%] text-gray-300 border-[0.5px] border-gray-400 p-3;
 }
-
-/* .hoverClass {
-  @apply w-[1000px] border-[0.5px] border-gray-400 rounded-[20px];
-} */

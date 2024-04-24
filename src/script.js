@@ -43,7 +43,7 @@ html.addEventListener("mouseover", () => {
   html.style.alignItems = "center";
   html.style.marginTop = "-5px";
   img1.style.backgroundColor = "black";
-  html.style.backgroundColor = "white";
+  html.style.backgroundColor = "rgb(209 213 219)";
   html.style.marginLeft = "-5px";
 
   css.style.visibility = "hidden";
@@ -77,7 +77,7 @@ css.addEventListener("mouseover", () => {
   css.style.alignItems = "center";
   css.style.marginTop = "-5px";
   img2.style.backgroundColor = "black";
-  css.style.backgroundColor = "white";
+  css.style.backgroundColor = "rgb(209 213 219)";
   css.style.marginLeft = "-7px";
 
   html.style.visibility = "hidden";
@@ -111,7 +111,7 @@ tailwind.addEventListener("mouseover", () => {
   tailwind.style.alignItems = "center";
   tailwind.style.marginTop = "-5px";
   tailwind.style.marginLeft = "-7.5px";
-  tailwind.style.backgroundColor = "white";
+  tailwind.style.backgroundColor = "rgb(209 213 219)";
 
   css.style.visibility = "hidden";
   html.style.visibility = "hidden";
@@ -144,7 +144,7 @@ js.addEventListener("mouseover", () => {
   js.style.alignItems = "center";
   js.style.marginTop = "-5px";
   img4.style.backgroundColor = "black";
-  js.style.backgroundColor = "white";
+  js.style.backgroundColor = "rgb(209 213 219)";
   js.style.marginLeft = "-5.5px";
 
   html.style.visibility = "hidden";
@@ -178,7 +178,7 @@ react.addEventListener("mouseover", () => {
   react.style.alignItems = "center";
   react.style.marginTop = "-5px";
   img5.style.backgroundColor = "black";
-  react.style.backgroundColor = "white";
+  react.style.backgroundColor = "rgb(209 213 219)";
   react.style.marginLeft = "-5px";
 
   html.style.visibility = "hidden";
@@ -203,18 +203,79 @@ react.addEventListener("mouseout", () => {
 });
 
 github = document.querySelector("#github");
+ghtext = document.querySelector("#ghtext");
+ghlogo = document.querySelector("#ghlogo");
 insta = document.querySelector("#insta");
+igtext = document.querySelector("#igtext");
+iglogo = document.querySelector("#iglogo");
 mail = document.querySelector("#mail");
+mailtext = document.querySelector("#mailtext");
+maillogo = document.querySelector("#maillogo");
 
 github.addEventListener("click", () => {
   location.href = "https://github.com/whoiskurisu";
 });
 
+github.onmouseover = () => {
+  github.style.backgroundImage = 'url("./images/github.png")';
+  github.style.backgroundSize = "cover";
+  github.style.border = "black";
+  github.style.boxShadow = "0px 0px 3px #563D7C";
+  github.style.color = "white";
+  ghlogo.style.transform = "scale(1.1)";
+};
+
+github.onmouseout = () => {
+  github.style.backgroundImage = "none";
+  github.style.backgroundColor = "black";
+  github.style.boxShadow = "none";
+  ghlogo.style.transform = "none";
+  github.style.color = "rgb(209 213 219)";
+  github.style.border = "1px solid rgb(209 213 219)";
+};
+
 insta.addEventListener("click", () => {
   location.href = "https://www.instagram.com/krish.py";
 });
+
+insta.onmouseover = () => {
+  insta.style.backgroundImage = 'url("./images/insta.jpg")';
+  insta.style.backgroundSize = "cover";
+  insta.style.border = "black";
+  insta.style.boxShadow = "0px 0px 3px #F58138";
+  insta.style.color = "white";
+  iglogo.style.transform = "scale(1.09)";
+};
+
+insta.onmouseout = () => {
+  insta.style.backgroundImage = "none";
+  insta.style.backgroundColor = "black";
+  insta.style.boxShadow = "none";
+  iglogo.style.transform = "none";
+  insta.style.color = "rgb(209 213 219)";
+  insta.style.border = "1px solid rgb(209 213 219)";
+};
 
 mail.addEventListener("click", () => {
   location.href =
     "https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCFTfRKsftPqSZcRLKQZxqxvTWwnKMbznrBZdcdQkZDlZcnMlTRZdKDwBClHcbCSZhFHxB";
 });
+
+mail.onmouseover = () => {
+  mail.style.backgroundImage = 'url("./images/mail.png")';
+  mail.style.backgroundColor = "#A67B5B";
+  mail.style.backgroundSize = "cover";
+  mail.style.border = "black";
+  mail.style.boxShadow = "0px 0px 3px #906942";
+  mail.style.color = "white";
+  maillogo.style.transform = "scale(1.09  )";
+};
+
+mail.onmouseout = () => {
+  mail.style.backgroundImage = "none";
+  mail.style.backgroundColor = "black";
+  mail.style.boxShadow = "none";
+  maillogo.style.transform = "none";
+  mail.style.color = "rgb(209 213 219)";
+  mail.style.border = "1px solid rgb(209 213 219)";
+};
